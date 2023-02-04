@@ -23,6 +23,7 @@ public class DemoSteps {
 
     @When("^user enters credential (.*) and (.*)$")
     public void user_enters_username_and_password(String username, String password) {
+        System.out.println(this);
         System.out.println("user enters "+username+" and "+password);
     }
 
