@@ -6,8 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)  // requires junit dependancy
 @CucumberOptions(features="src/test/resources/Features", glue={"stepDefnitions"},
-        monochrome = true, plugin = {"pretty","html:outputs/reports/htmlReports/index.html", "json:outputs/reports/jsonReports/index.json", "junit:outputs/reports/xmlReports/index.xml"},
-        tags = "@SmokeScenarios")  // requires cucumber-junit dependancy from io.cucumber
+        monochrome = true, plugin = {"pretty","html:outputs/reports/htmlReports/index.html", "json:outputs/reports/jsonReports/index.json", "junit:outputs/reports/xmlReports/index.xml"}
+        //,tags = "@SmokeScenarios"
+    )  // requires cucumber-junit dependancy from io.cucumber
 public class DemoRunner {
     /**
      * With the help of runner class we can excute multiple feature files.
