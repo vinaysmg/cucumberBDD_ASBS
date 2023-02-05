@@ -6,7 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/Features/Tags.feature", glue = "src/test/java/stepDefnitions",
-    tags = "@all")
+    tags = "@all"
+        ,plugin = {"pretty", "json:target/cucumber.json"})
 public class TagsRunnerTest {
     /**
      *  tags = "@all"

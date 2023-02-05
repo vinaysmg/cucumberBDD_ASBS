@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/Features/Hooks.feature", glue = "stepDefnitions/hooks"
-     ,monochrome = true)
+     ,monochrome = true
+     ,plugin = {"pretty", "json:target/cucumber.json"})
 public class HooksRunnerTest {
 }
