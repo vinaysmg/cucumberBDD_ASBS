@@ -1,0 +1,11 @@
+Using maven commands, we can execute test without IDE, GUI.
+check maven version using below command
+        mvn -version
+mvn test
+    Above command will pick the any file name metches with below naming convention, beginning or ending.
+And execute them using junit
+    **/Test*.java
+    **/*Test.java
+    **/*TestCase.java
+
+cucumber.options are disabled in latest versions, refer java doc of io.cucumber.core.options.Constants.
